@@ -38,8 +38,8 @@ class App extends Component{
             
             <div className="row">
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-               {/*  {elements} */}
-               <Product products={products}/>
+                {elements}
+               {/* <Product products={products}/> */}
               </div>
             
             </div>

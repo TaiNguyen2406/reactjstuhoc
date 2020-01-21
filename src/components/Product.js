@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 
 class  Product extends Component{
-    
+    constructor(props){
+        super(props);
+        this.onAddToCart = this.onAddToCart.bind(this);
+    }
+
+    onAddToCart(){
+        alert(this.props.name+'-'+this.props.price)
+    }
+
     render(){
-        let results=this.props.products.map((product,index)=>{
+        /* let results=this.props.products.map((product,index)=>{
             return  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <div className="thumbnail">
                 <img data-src="#" alt=""></img>
@@ -19,11 +27,11 @@ class  Product extends Component{
                 </div>
             </div>
         </div>
-        })
+        }) */
         return (
-            <div>{results}</div>
+            // <div>{results}</div>
         
-      /*   <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <div className="thumbnail">
                 <img data-src="#" alt=""></img>
                 <div className="caption">
@@ -33,11 +41,11 @@ class  Product extends Component{
                         {this.props.price}
                     </p>
                     <p>
-                        <button className="btn btn-active">Mua hàng</button>
+                        <button className="btn btn-active" onClick={ this.onAddToCart}>Mua hàng</button>
                     </p>
                 </div>
             </div>
-        </div> */
+        </div>
         )
     }
 }
