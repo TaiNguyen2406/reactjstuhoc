@@ -75,23 +75,7 @@ class App extends Component {
     });
 
     return (
-      // <div>
-      //   <Header />
-
-      //   <div className="row">
-      //     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      //       {elements}
-      //       {/* <Product products={products}/> */}
-      //     </div>
-      //   </div>
-      //   <button
-      //     type="button"
-      //     className="btn btn-warning"
-      //     onClick={this.changeStatus}
-      //   >
-      //     Active:{this.state.isActive === true ? "true" : "false"}
-      //   </button>
-      // </div>
+     
       <div className="container mt-50">
         <div className="row">
           <ColorPicker
