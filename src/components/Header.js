@@ -5,13 +5,13 @@ class Header extends Component{
         return (
          
          <nav className="navbar navbar-inverse">
-             <a className="navbar-brand" href="#">Tự học</a>
+             <a className="navbar-brand" href="#">Tá»± há»c</a>
              <ul className="nav navbar-nav">
                  <li className="active">
-                     <a href="#">Trang chủ</a>
+                     <a href="#">Trang chá»§</a>
                  </li>
                  <li>
-                     <a href="#">Danh mục sản phẩm</a>
+                     <a href="#">Danh má»¥c sáº£n pháº©m</a>
                  </li>
              </ul>
          </nav>
